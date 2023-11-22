@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Fusion</title>
+    <link rel="shortcut icon" href="./Image/Icon/right/temp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/searchbar.css">
+    <link rel="stylesheet" href="./Css/currentWeather.css">
+    <link rel="stylesheet" href="./Css/Hour.css">
+    <link rel="stylesheet" href="./Css/hori.css">
+    <link rel="stylesheet" href="./Css/Forcast.css">
+    <link rel="stylesheet" href="./Css/Others.css">
+    <link rel="stylesheet" href="./Css/Alert.css">
+
+</head>
+
+<body>
+    <!-- Main section -->
+    <div class="main">
+        <div class="left">
+            <div id="searchbar">
+                <input id="searchbox" placeholder="Enter city name" spellcheck="false" type="text">
+                <button id="sbtn"><img src="./Image/Icon/left/search.png" alt="Search"></button>
+            </div>
+            <div id="currentWeather">
+                <div id="showTemp">
+                    <p class="temp">32<sup>&deg;</sup>C</p>
+                    <p id="city">Guwahati2</p>
+                    <p id="condition">Sunny2</p>
+                </div>
+                <div id="otherInfo">
+                    <div id="up">
+                        <div class="box">
+                            <div class="otherinfotitle">
+                                <img src="./Image/Icon/left/thermosta.png" alt="" srcset="">
+                                <p class="thermo">FEELS Like</p>
+                            </div>
+                            <h2 id="h2_1" class="thermo_h2_1">32<sup>&deg;</sup></h2>
+                        </div>
+                        <div class="box">
+                            <div class="otherinfotitle">
+                                <img src="./Image/Icon/left/water_drop.png" alt="" srcset="">
+                                <p class="thermo">Precipitation</p>
+                            </div>
+                            <h2 id="h2_2" class="thermo_h2">3.2</h2>
+                        </div>
+                    </div>
+                    <div id="down">
+                        <div class="box">
+                            <div class="otherinfotitle">
+                                <img src="./Image/Icon/left/cloud.png" alt="" srcset="">
+                                <p class="thermo">CLOUD</p>
+                            </div>
+                            <h2 id="h2_3" class="thermo_h2">32</h2>
+                        </div>
+                        <div class="box">
+                            <div class="otherinfotitle">
+                                <img src="./Image/Icon/left/humidity_percentage.png" alt="" srcset="">
+                                <p class="thermo">Humidity</p>
+                            </div>
+                            <h2 id="h2_4" class="thermo_h2">32<span>%</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div id="hours">
+                <div class="titleforHour">
+                    <img src="./Image/Icon/right/clock.png" alt="" srcset="">
+                    <p class="iconforHour">HOURLY FORECAST</p>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="scroll-box">
+                </div>
+            </div>
+            <div id="forecast">
+                <div class="titleforHour">
+                    <img src="./Image/Icon/right/calendar_month.png" alt="" srcset="">
+                    <p class="iconforHour">5-DAY FORECAST</p>
+                </div>
+                <div class="horizontal-line"></div>
+
+                <div class="cards">
+                    <div class="fore-card-content">
+                        <div id="fordate9" class="fore-time">23-12-11</div>
+                        <img id="foreicon9" class="fore-icon" src="./Image/Icon/right/clear.png" alt="">
+                        <div id="foretemp9" class="fore-temperature">25°</div>
+                    </div>
+                    <div class="fore-card-content">
+                        <div id="fordate17" class="fore-time">23-12-11</div>
+                        <img id="foreicon17" class="fore-icon" src="./Image/Icon/right/clear.png" alt="">
+                        <div id="foretemp17" class="fore-temperature">25°</div>
+                    </div>
+                    <div class="fore-card-content">
+                        <div id="fordate25" class="fore-time">23-12-11</div>
+                        <img id="foreicon25" class="fore-icon" src="./Image/Icon/right/clear.png" alt="">
+                        <div id="foretemp25" class="fore-temperature">25°</div>
+                    </div>
+                    <div class="fore-card-content">
+                        <div id="fordate33" class="fore-time">23-12-11</div>
+                        <img id="foreicon33" class="fore-icon" src="./Image/Icon/right/clear.png" alt="">
+                        <div id="foretemp33" class="fore-temperature">25°</div>
+                    </div>
+                    <div class="fore-card-content">
+                        <div id="fordate38" class="fore-time">23-12-11</div>
+                        <img id="foreicon38" class="fore-icon" src="./Image/Icon/right/clear.png" alt="">
+                        <div id="foretemp38" class="fore-temperature">25°</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="others">
+                <div class="uv">
+                    <div id="tfh" class="titleforHour">
+                        <img src="./Image/Icon/left/thermosta.png" alt="" srcset="">
+                        <p class="iconforHour">UV INDEX</p>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <h2 id="h2_uv" class="thermo_h2_1">2.0</h2>
+                    <p id="uv_p">Use sun protection until 16:00</p>
+                </div>
+                <div class="wind">
+                    <div id="tfw" class="titleforHour">
+                        <img src="./Image/Icon/right/wind.png" alt="" srcset="">
+                        <p class="iconforHour">WIND</p>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="wind_info">
+
+                        <div class="wind_left">
+                            <div class="wind_up">
+                                <div class="wind_num">
+                                    <h2 id="h2_wind" class="thermo_h2_1">2.0</h2>
+                                </div>
+                                <div class="wind_others">
+                                    <p>KPH</p>
+                                    <p>Wind</p>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="wind_down">
+                                <div class="wind_num">
+                                    <h2 id="h2_wind2" class="thermo_h2_1">2.0</h2>
+                                </div>
+                                <div class="wind_others">
+                                    <p>KPH</p>
+                                    <p>Gusts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wind_right">
+                            <img src="./Image/Icon/right/no bg1.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loading spinner -->
+    <div id="loading-spinner">
+        <img src="./Image/Icon/Spinner/Double Ring-1.9s-200px.gif" alt="Loading" srcset="">
+        <h3>Loading weather data...</h3>
+    </div>
+    <!-- alert -->
+    <div id="customAlert" class="custom-alert">
+        Sorry! We have no weather information about this city.
+        <button class="close-btn" onclick="closeAlert()">Close</button>
+    </div>
+    <!-- End Main section  -->
+    <script src="./Js/sricpt.js"></script>
+</body>
+
+</html>
+
+<!-- https://api.openweathermap.org/data/2.5/forecast?q=guwahati&appid=36f38b290c39f12fa2696ee31cec91b9 -->
+<!-- <span class="secondOption1">|</span><span
+                            class="secondOption2">F</span> -->

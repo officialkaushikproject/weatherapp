@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Lato:ital,wght@1,300&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap");
+#showTemp {
+  height: 44%;
+  width: 100%;
+  border: 1px solid rgba(247, 0, 255, 0);
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 1.5%;
+
+}
+.temp {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 300;
+  cursor: default;
+  margin-top: 20%;
+}
+.secondOption1 {
+  font-size: 20px;
+  font-weight: 400;
+  cursor: default;
+}
+.secondOption2 {
+  margin-left: 7px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  cursor: pointer;
+}
+#city {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+#condition {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* Down side */
+#otherInfo {
+  height: 55%;
+  width: 100%;
+  border: 1px solid rgba(123, 255, 0, 0);
+}
+
+#up {
+  margin-top: 3%;
+  height: 45%;
+  width: 100%;
+  border: 1px solid rgba(0, 38, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  height: 95%;
+  width: 45%;
+  border: 1px solid #b0d7ff;
+  margin-right: 3%;
+  margin-left: 3%;
+  border-radius: 10%;
+  background-color: #b0d7ffb2;
+}
+.otherinfotitle {
+  display: flex;
+  font-family: "Libre Baskerville", serif;
+  margin-top: 9%;
+  margin-left: 5%;
+}
+
+.otherinfotitle img {
+  height: 17px;
+  margin-right: 2%;
+}
+.thermo_h2 {
+  margin-left: 32%;
+  font-size: 2rem;
+  margin-top: 9%;
+  font-family: "Maven Pro", sans-serif;
+}
+.thermo_h2_1 {
+  margin-left: 32%;
+  font-size: 2rem;
+  margin-top: 6%;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.thermo {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Maven Pro", sans-serif;
+}
+#down {
+  height: 45%;
+  width: 100%;
+  border: 1px solid rgba(255, 0, 200, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+}

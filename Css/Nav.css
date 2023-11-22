@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap");
+.navbar {
+  background-color: rgb(44,46,55);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+  margin-left: 65px;
+}
+
+.logo-name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.logo-name:hover{
+    cursor: none;
+}
+.logo-name:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.clock-container {
+  font-size: 25px;
+}
+
+#digital-clock {
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-right: 65px;
+}

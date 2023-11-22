@@ -1,0 +1,10 @@
+.horizontal-line {
+  width: 90%;
+  height: 2px;
+  margin: auto;
+  background: linear-gradient(45deg, #7f7fd5 0%, #91eae4 100%);
+  top: 10;
+  border-radius: 4px;
+  margin-top: .5%;
+  margin-bottom: 1%;
+}
